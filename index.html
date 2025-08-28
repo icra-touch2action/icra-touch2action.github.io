@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>From Touch to Action — ICRA 2026 Workshop</title>
+  <meta name="description" content="From Touch to Action: Enhancing Robot Manipulation through Tactile Perception. Full-day workshop at ICRA 2026, Vienna." />
+  <!-- Tailwind (CDN, no build needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small quality-of-life tweaks */
+    html { scroll-behavior:smooth; }
+    .chip { @apply inline-flex items-center rounded-full bg-neutral-800 px-3 py-1 text-xs text-neutral-200; }
+    .card { @apply rounded-3xl border border-neutral-800 p-6 bg-neutral-900/40; }
+  </style>
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-bold text-lg tracking-tight">From Touch to Action</a>
+      <nav class="hidden md:flex gap-4 text-sm">
+        <a href="#about" class="hover:text-white/90 text-neutral-300">About</a>
+        <a href="#topics" class="hover:text-white/90 text-neutral-300">Topics</a>
+        <a href="#schedule" class="hover:text-white/90 text-neutral-300">Schedule</a>
+        <a href="#submissions" class="hover:text-white/90 text-neutral-300">Call</a>
+        <a href="#speakers" class="hover:text-white/90 text-neutral-300">Speakers</a>
+        <a href="#organizers" class="hover:text-white/90 text-neutral-300">Organizers</a>
+        <a href="#industry" class="hover:text-white/90 text-neutral-300">Industry</a>
+        <a href="#faq" class="hover:text-white/90 text-neutral-300">FAQ</a>
+        <a href="#contact" class="hover:text-white/90 text-neutral-300">Contact</a>
+      </nav>
+      <div class="flex gap-2">
+        <a href="#submissions" class="rounded-2xl px-4 py-2 bg-white text-neutral-950 font-medium hover:bg-neutral-200">Submit</a>
+        <a href="#contact" class="rounded-2xl px-4 py-2 bg-neutral-800 text-neutral-200 hover:bg-neutral-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-fuchsia-600/20 via-transparent to-transparent pointer-events-none"></div>
+    <div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
+      <div class="max-w-3xl">
+        <p class="text-sm uppercase tracking-widest text-fuchsia-300/80">ICRA 2026 Workshop • Full-day</p>
+        <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+          From Touch to Action:
+          <span class="block text-fuchsia-300/90">Enhancing Robot Manipulation through Tactile Perception</span>
+        </h1>
+        <p class="mt-4 text-lg text-neutral-300">
+          Vienna, Austria • June 1–5, 2026 (exact day TBA). Hosted at the IEEE International Conference on Robotics and Automation (ICRA).
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="chip">Tactile Sensing</span>
+          <span class="chip">Manipulation</span>
+          <span class="chip">Simulation</span>
+          <span class="chip">Perception</span>
+          <span class="chip">Control</span>
+        </div>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#submissions" class="rounded-xl px-5 py-3 bg-fuchsia-300 text-neutral-950 font-semibold hover:bg-fuchsia-200">Call for Submissions</a>
+          <a href="#schedule" class="rounded-xl px-5 py-3 bg-neutral-800 text-neutral-200 hover:bg-neutral-700">See Schedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Why touch, why now?</h2>
+        <p class="mt-4 text-neutral-300">
+          Tactile sensing remains underexploited compared to vision or audition. This workshop takes a
+          vertical view—from bioinspiration and sensor design to simulation, perception, and control—to
+          make touch a first-class citizen in robot manipulation.
+        </p>
+        <p class="mt-3 text-neutral-300">
+          We combine keynote talks, an industry session, lightning talks, posters, and a concluding panel
+          to map the road from foundational insights to deployable policies in the wild.
+        </p>
+      </div>
+      <div class="card">
+        <dl class="grid grid-cols-2 gap-4 text-sm">
+          <div>
+            <dt class="text-neutral-400">Event</dt>
+            <dd class="font-medium">Full-day workshop @ ICRA 2026</dd>
+          </div>
+          <div>
+            <dt class="text-neutral-400">Location</dt>
+            <dd class="font-medium">Vienna, Austria</dd>
+          </div>
+          <div>
+            <dt class="text-neutral-400">Dates</dt>
+            <dd class="font-medium">June 1–5, 2026 (TBA)</dd>
+          </div>
+          <div>
+            <dt class="text-neutral-400">Submission Types</dt>
+            <dd class="font-medium">Short papers • Mini-reviews • Demos</dd>
+          </div>
+        </dl>
+        <div class="mt-6 border-t border-neutral-800 pt-4 text-sm text-neutral-400">
+          <p>We aim to offer lightning/spotlight slots and poster boards. Travel awards are being explored with sponsors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section id="topics" class="mx-auto max-w-7xl px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold">Workshop scope</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card"><h3 class="font-semibold text-lg">Bioinspiration</h3><p class="mt-2 text-sm text-neutral-300">Functional principles of human/animal touch shaping artificial tactile systems.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg">Transduction & Design</h3><p class="mt-2 text-sm text-neutral-300">Magnetic, optical, capacitive; design trade-offs, materials, morphology, integration.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg">Simulation</h3><p class="mt-2 text-sm text-neutral-300">From high-fidelity FEM to real-time simulators; closing the sim-to-real gap.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg">Perception & Touch Processing</h3><p class="mt-2 text-sm text-neutral-300">Learning from tactile data; domain adaptation; multi-modal fusion with vision & proprioception.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg">Control for Manipulation</h3><p class="mt-2 text-sm text-neutral-300">Model-based vs learning-based vs hybrid control; reliability in real deployments.</p></div>
+    </div>
+  </section>
+
+  <!-- Schedule (draft) -->
+  <section id="schedule" class="mx-auto max-w-7xl px-4 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Schedule (draft)</h2>
+      <span class="text-xs text-neutral-400">All times local • Subject to change</span>
+    </div>
+    <ol class="mt-6 space-y-3">
+      <!-- You can edit times/titles freely -->
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">08:30</span><span class="font-medium">Welcome, Overview</span></div><span class="text-xs text-neutral-400">10 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">08:40</span><span class="font-medium">Session I — The Sense of Touch (Keynote + Q&A)</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">09:15</span><span class="font-medium">Session II — Transduction, Design & Integration</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">09:50</span><span class="font-medium">Lightning Talks</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">10:25</span><span class="font-medium">Posters & Coffee</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">11:00</span><span class="font-medium">Session II — Keynote 2</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">11:35</span><span class="font-medium">Session III — Simulation</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">12:10</span><span class="font-medium">Lunch</span></div><span class="text-xs text-neutral-400">65 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neutral-400 w-16">13:15</span><span class="font-medium">Session IV — Perception & Touch Processing</span></div><span class="text-xs text-neutral-400">35 min</span></div></li>
+      <li class="card"><div class="flex flex-wrap items-baseline justify-between gap-3"><div class="flex items-baseline gap-3"><span class="text-sm tabular-nums text-neut
