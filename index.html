@@ -10,34 +10,34 @@
   <style>
     /* Small quality-of-life tweaks */
     html {
-      font-size: 18px; /* default is 16px — increase globally */
+      font-size: 16px; /* default is 16px — increase globally */
       scroll-behavior: smooth;
     }
-    .chip { @apply inline-flex items-center rounded-full bg-neutral-800 px-3 py-1 text-xs text-neutral-200; }
-    .card { @apply rounded-3xl border border-neutral-800 p-6 bg-neutral-900/40; }
+    .chip { @apply inline-flex items-center rounded-full bg-neutral-700 px-3 py-1 text-xs text-neutral-200; }
+    .card { @apply rounded-3xl border border-neutral-700 p-6 bg-neutral-800/40; }
   </style>
 </head>
-<!-- <body class="min-h-screen bg-neutral-950 text-neutral-100"> -->
-<body class="min-h-screen bg-neutral-950 text-neutral-100 text-lg">
+<!-- <body class="min-h-screen bg-neutral-800 text-neutral-100"> -->
+<body class="min-h-screen bg-zinc-800 text-neutral-100 text-lg">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
+  <header class="sticky top-0 z-50 backdrop-blur bg-neutral-900/70 border-b border-neutral-700">
     <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="font-bold text-lg tracking-tight text-lg">From Touch to Action</a>
+      <a href="#home" class="font-bold text-3xl tracking-tight">From Touch to Action</a>
       <nav class="hidden md:flex gap-4 text-sm">
-        <a href="#about" class="hover:text-white/90 text-neutral-300 text-lg">About</a>
-        <a href="#topics" class="hover:text-white/90 text-neutral-300 text-lg">Topics</a>
-        <a href="#schedule" class="hover:text-white/90 text-neutral-300 text-lg">Schedule</a>
-        <a href="#submissions" class="hover:text-white/90 text-neutral-300 text-lg">Call</a>
-        <a href="#speakers" class="hover:text-white/90 text-neutral-300 text-lg">Speakers</a>
-        <a href="#organizers" class="hover:text-white/90 text-neutral-300 text-lg">Organizers</a>
-        <a href="#industry" class="hover:text-white/90 text-neutral-300 text-lg">Industry</a>
-        <!-- <a href="#faq" class="hover:text-white/90 text-neutral-300 text-lg">FAQ</a> -->
-        <a href="#contact" class="hover:text-white/90 text-neutral-300 text-lg">Contact</a>
+        <a href="#about" class="hover:text-white/90 text-neutral-300 text-base">About</a>
+        <a href="#topics" class="hover:text-white/90 text-neutral-300 text-base">Topics</a>
+        <a href="#schedule" class="hover:text-white/90 text-neutral-300 text-base">Schedule</a>
+        <a href="#submissions" class="hover:text-white/90 text-neutral-300 text-base">Call</a>
+        <a href="#speakers" class="hover:text-white/90 text-neutral-300 text-base">Speakers</a>
+        <a href="#organizers" class="hover:text-white/90 text-neutral-300 text-base">Organizers</a>
+        <a href="#industry" class="hover:text-white/90 text-neutral-300 text-base">Industry</a>
+        <!-- <a href="#faq" class="hover:text-white/90 text-neutral-300 text-base">FAQ</a> -->
+        <a href="#contact" class="hover:text-white/90 text-neutral-300 text-base">Contact</a>
       </nav>
       <div class="flex gap-2">
-        <a href="#submissions" class="rounded-2xl px-4 py-2 bg-white text-neutral-950 font-medium hover:bg-neutral-200">Submit</a>
-        <a href="#contact" class="rounded-2xl px-4 py-2 bg-neutral-800 text-neutral-200 hover:bg-neutral-700">Contact</a>
+        <a href="#submissions" class="rounded-2xl px-4 py-2 bg-white text-neutral-950 font-medium hover:bg-neutral-200 text-base">Submit</a>
+        <a href="#contact" class="rounded-2xl px-4 py-2 bg-neutral-700 text-white hover:bg-neutral-600 text-base">Contact</a>
       </div>
     </div>
   </header>
@@ -48,7 +48,7 @@
     <div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
       <div class="max-w-3xl">
         <p class="text-sm uppercase tracking-widest text-fuchsia-300/80">ICRA 2026 Workshop • Full-day</p>
-        <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+        <h1 class="mt-3 text-3xl md:text-5xl font-extrabold leading-tight">
           From Touch to Action:
           <span class="block text-fuchsia-300/100">Enhancing Robot Manipulation Policies through Tactile Perception</span>
         </h1>
@@ -64,7 +64,7 @@
         </div>tactile -->
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="#submissions" class="rounded-xl px-5 py-3 bg-fuchsia-300 text-neutral-950 font-semibold hover:bg-fuchsia-200">Call for Submissions</a>
-          <a href="#schedule" class="rounded-xl px-5 py-3 bg-neutral-800 text-neutral-200 hover:bg-neutral-700">See Schedule</a>
+          <a href="#schedule" class="rounded-xl px-5 py-3 bg-neutral-700 text-neutral-200 hover:bg-neutral-600">See Schedule</a>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
   <section id="about" class="mx-auto max-w-7xl px-4 py-14 md:py-20">
     <div class="grid md:grid-cols-2 gap-10 items-start">
       <div>
-        <h2 class="text-2xl md:text-3xl font-bold">Why touch, why now?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold">Why <span class="text-fuchsia-300">touch</span>, why <span class="text-fuchsia-300">now</span>?</h2>
         <p class="mt-4 text-neutral-300">
           Tactile sensing remains underexploited compared to vision or audition. This workshop takes a
           vertical view—from bioinspiration and sensor design to simulation, perception, and control—to
@@ -101,11 +101,8 @@
           </div>
           <div>
             <dt class="text-neutral-400 text-lg">Submission Types</dt>
-            <dd class="font-medium text-lg">Short papers • Mini-reviews • Demos</dd>
+            <dd class="font-medium text-lg">Short papers/Mini-reviews/Demos</dd>
           </div>
-        <!-- </dl> -->
-        <!-- <div class="mt-6 border-t border-neutral-800 pt-4 text-sm text-neutral-400"> -->
-          <!-- <p>We aim to offer lightning/spotlight slots and poster boards. Travel awards are being explored with sponsors.</p> -->
         </div>
       </div>
     </div>
@@ -115,11 +112,11 @@
   <section id="topics" class="mx-auto max-w-7xl px-4 py-14">
     <h2 class="text-2xl md:text-3xl font-bold">Workshop scope</h2>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card"><h3 class="font-semibold text-lg">Bioinspiration</h3><p class="mt-2 text-base text-neutral-300 ">Functional principles of human/animal touch shaping artificial tactile systems.</p></div>
-      <div class="card"><h3 class="font-semibold text-lg">Transduction & Design</h3><p class="mt-2 text-base text-neutral-300">Magnetic, optical, capacitive; design trade-offs, materials, morphology, integration.</p></div>
-      <div class="card"><h3 class="font-semibold text-lg">Simulation</h3><p class="mt-2 text-base text-neutral-300">From high-fidelity FEM to real-time simulators; closing the sim-to-real gap.</p></div>
-      <div class="card"><h3 class="font-semibold text-lg">Perception & Touch Processing</h3><p class="mt-2 text-base text-neutral-300">Learning from tactile data; domain adaptation; multi-modal fusion with vision & proprioception.</p></div>
-      <div class="card"><h3 class="font-semibold text-lg">Control for Manipulation</h3><p class="mt-2 text-base text-neutral-300">Model-based vs learning-based vs hybrid control; reliability in real deployments.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg text-fuchsia-300">Bioinspiration</h3><p class="mt-2 text-base text-neutral-300 text-fuchsia-100">Functional principles of human/animal touch shaping artificial tactile systems.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg text-fuchsia-300">Transduction & Design</h3><p class="mt-2 text-base text-neutral-300 text-fuchsia-300">Magnetic, optical, capacitive; design trade-offs, materials, morphology, integration.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg text-fuchsia-300">Simulation</h3><p class="mt-2 text-base text-neutral-300 text-fuchsia-300">From high-fidelity FEM to real-time simulators; closing the sim-to-real gap.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg text-fuchsia-300">Perception & Touch Processing</h3><p class="mt-2 text-base text-neutral-300 text-fuchsia-300">Learning from tactile data; domain adaptation; multi-modal fusion with vision & proprioception.</p></div>
+      <div class="card"><h3 class="font-semibold text-lg text-fuchsia-300">Control for Manipulation</h3><p class="mt-2 text-base text-neutral-300 text-fuchsia-300">Model-based vs learning-based vs hybrid control; reliability in real deployments.</p></div>
     </div>
   </section>
 
@@ -127,7 +124,7 @@
   <section id="schedule" class="mx-auto max-w-7xl px-4 py-14">
     <div class="flex items-end justify-between gap-4">
       <h2 class="text-2xl md:text-3xl font-bold">Tentative Schedule </h2>
-      <span class="text-xs text-neutral-400">All times local (Vienna, Austria) • Subject to change</span>
+      <span class="text-sm text-neutral-400">All times local (Vienna, Austria) • Subject to change</span>
     </div>
     <ol class="mt-6 space-y-3">
       <!-- Workshop Opening -->
@@ -138,7 +135,7 @@
             <span class="font-medium flex-1 min-w-0">Workshop Opening & Welcome</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Organizers</span> -->
           </div>
-          <span class="text-xs text-neutral-400">10 min</span>
+          <span class="text-sm text-neutral-400">10 min</span>
         </div>
       </li>
 
@@ -151,10 +148,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">08:40 am</span>
-            <span class="font-medium flex-1 min-w-0">Multimodal Touch Sensing and Processing for Tactile Robotics</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Multimodal Touch Sensing and Processing for Tactile Robotics</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Katherine J. Kuchenbecker</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -167,10 +164,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">09:10 am</span>
-            <span class="font-medium flex-1 min-w-0">Towards Generalizable Tactile Sensors and Sensing via Simulation</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Towards Generalizable Tactile Sensors and Sensing via Simulation</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Wenzhen Yuan</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -178,10 +175,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">09:40 am</span>
-            <span class="font-medium flex-1 min-w-0">Lightning Talks: Novel Tactile Sensors</span>
+            <span class="font-medium flex-1 min-w-0 text-amber-100">Lightning Presentations</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Participants</span> -->
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -192,7 +189,7 @@
             <span class="font-medium flex-1 min-w-0">Coffee Break & Poster Session</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">All</span> -->
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -200,10 +197,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">10:40 am</span>
-            <span class="font-medium flex-1 min-w-0">To Be Announced</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">To Be Announced</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Lorenzo Jamone</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -216,10 +213,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">11:10 am</span>
-            <span class="font-medium flex-1 min-w-0">Soft Robots as Force Sensors: Real-Time FEM Models for Tactile Sensing and Haptic Interfaces</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Soft Robots as Force Sensors: Real-Time FEM Models for Tactile Sensing and Haptic Interfaces</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Christian Duriez</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -231,7 +228,7 @@
             <span class="font-medium flex-1 min-w-0">Lunch Break</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">All</span> -->
           </div>
-          <span class="text-xs text-neutral-400">65 min</span>
+          <span class="text-sm text-neutral-400">65 min</span>
         </div>
       </li>
       <!-- Session IV Header -->
@@ -243,10 +240,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">12:50 pm</span>
-            <span class="font-medium flex-1 min-w-0">To Be Announced</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">To Be Announced</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Roberto Calandra</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -254,10 +251,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">13:20 pm</span>
-            <span class="font-medium flex-1 min-w-0">Task-driven Touch Sensing and Manipulation</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Task-driven Touch Sensing and Manipulation</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Shan Luo</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -265,10 +262,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">13:50 pm</span>
-            <span class="font-medium flex-1 min-w-0">Industry Session</span>
+            <span class="font-medium flex-1 min-w-0 text-amber-100">Industry Session</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Industry Partners</span> -->
           </div>
-          <span class="text-xs text-neutral-400">60 min</span>
+          <span class="text-sm text-neutral-400">60 min</span>
         </div>
       </li>
 
@@ -279,7 +276,7 @@
             <span class="font-medium flex-1 min-w-0">Coffee Break & Poster Session</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">All</span> -->
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -292,10 +289,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">15:20 pm</span>
-            <span class="font-medium flex-1 min-w-0">Robot Learning from Human Touch</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Robot Learning from Human Touch</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Lerrel Pinto</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -303,10 +300,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">15:50 pm</span>
-            <span class="font-medium flex-1 min-w-0">Unlocking tactile sensing in robot learning</span>
+            <span class="font-medium flex-1 min-w-0 text-fuchsia-300">Unlocking tactile sensing in robot learning</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Carlo Sferrazza</span>
           </div>
-          <span class="text-xs text-neutral-400">30 min</span>
+          <span class="text-sm text-neutral-400">30 min</span>
         </div>
       </li>
 
@@ -319,10 +316,10 @@
         <div class="flex flex-wrap items-baseline justify-between gap-3">
           <div class="flex items-baseline gap-4 flex-1">
             <span class="text-sm tabular-nums text-neutral-400 w-16 flex-shrink-0">16:20 pm</span>
-            <span class="font-medium flex-1 min-w-0">Panel Discussion: The Future of Touch in Robotics</span>
+            <span class="font-medium flex-1 min-w-0 text-amber-100">Panel Discussion: The Future of Touch in Robotics</span>
             <span class="font-medium text-neutral-300 w-64 flex-shrink-0">All Speakers</span>
           </div>
-          <span class="text-xs text-neutral-400">60 min</span>
+          <span class="text-sm text-neutral-400">60 min</span>
         </div>
       </li>
 
@@ -333,7 +330,7 @@
             <span class="font-medium flex-1 min-w-0">Awards & Closing Remarks</span>
             <!-- <span class="font-medium text-neutral-300 w-64 flex-shrink-0">Organizers</span> -->
           </div>
-          <span class="text-xs text-neutral-400">10 min</span>
+          <span class="text-sm text-neutral-400">10 min</span>
         </div>
       </li>
     </ol>
@@ -349,14 +346,14 @@
           Ongoing work, preliminary results, or novel ideas across sensing, perception, simulation, and control.
           Selected works may receive lightning/spotlight slots and posters.
         </p>
-        <a href="#" class="mt-3 inline-block text-sm font-semibold text-fuchsia-300 hover:text-fuchsia-200">Template & Submission →</a>
+        <a href="https://openreview.net/" class="mt-3 inline-block text-sm font-semibold text-fuchsia-300 hover:text-fuchsia-200">OpenReview Submission →</a>
       </div>
       <div class="card">
         <h3 class="font-semibold">Mini-Reviews (1–2 pages)</h3>
         <p class="mt-2 text-sm text-neutral-300">
           Brief critical surveys of recent advances (past 5 years) highlighting open questions and trends to inform the panel.
         </p>
-        <a href="#" class="mt-3 inline-block text-sm font-semibold text-fuchsia-300 hover:text-fuchsia-200">Template & Submission →</a>
+        <a href="https://openreview.net/" class="mt-3 inline-block text-sm font-semibold text-fuchsia-300 hover:text-fuchsia-200">OpenReview Submission →</a>
       </div>
       <div class="card">
         <h3 class="font-semibold">Physical Demos</h3>
@@ -366,12 +363,12 @@
         <a href="#" class="mt-3 inline-block text-sm font-semibold text-fuchsia-300 hover:text-fuchsia-200">Demo Guidelines →</a>
       </div>
     </div>
-
+    Correct links to be added once submission site is live.
     <div class="mt-8 card">
       <h4 class="text-xl font-semibold">Important dates (tentative)</h4>
       <ul class="mt-2 text-base text-neutral-300 list-disc list-inside">
         <li>Submission site opens: TBA</li>
-        <li>Submission deadline: Sept. 2025 (approx., aligned with ICRA workshop timelines)</li>
+        <li>Submission deadline: TBA</li>
         <li>Notification: TBA</li>
         <li>Camera-ready & poster upload: TBA</li>
       </ul>
@@ -448,12 +445,12 @@
   <section id="organizers" class="mx-auto max-w-7xl px-4 py-14">
     <h2 class="text-2xl md:text-3xl font-bold">Organizing Committee</h2>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card"><h3 class="font-semibold">Lorenzo Natale</h3><p class="text-sm text-neutral-300">Senior Researcher • IIT</p><a href="mailto:lorenzo.natale@iit.it" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">lorenzo.natale@iit.it</a></div>
-      <div class="card"><h3 class="font-semibold">Lorenzo Jamone</h3><p class="text-sm text-neutral-300">Associate Professor • UCL</p><a href="mailto:l.jamone@ucl.ac.uk" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">l.jamone@ucl.ac.uk</a></div>
-      <div class="card"><h3 class="font-semibold">Alexander Schmitz</h3><p class="text-sm text-neutral-300">CEO • XELA Robotics</p><a href="mailto:alexander@xelarobotics.com" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">alexander@xelarobotics.com</a></div>
-      <div class="card"><h3 class="font-semibold">Carlo Alessi</h3><p class="text-sm text-neutral-300">Postdoctoral Researcher • IIT</p><a href="mailto:carlo.alessi@iit.it" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">carlo.alessi@iit.it</a></div>
-      <div class="card"><h3 class="font-semibold">Gabriele Caddeo</h3><p class="text-sm text-neutral-300">Postdoctoral Researcher • IIT</p><a href="mailto:gabriele.caddeo@iit.it" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">gabriele.caddeo@iit.it</a></div>
-      <div class="card"><h3 class="font-semibold">Iris Andrussow</h3><p class="text-sm text-neutral-300">Ph.D. Student • Max Planck Institute for Intelligent Systems (MPI-IS)</p><a href="mailto:andrussow@is.mpg.de" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">andrussow@is.mpg.de</a></div>
+      <div class="card"><h3 class="font-semibold">Lorenzo Natale</h3><p class="text-sm text-neutral-300">Senior Researcher • IIT</p><a href="mailto:lorenzo.natale@iit.it" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">lorenzo.natale@iit.it</a></div>
+      <div class="card"><h3 class="font-semibold">Lorenzo Jamone</h3><p class="text-sm text-neutral-300">Associate Professor • UCL</p><a href="mailto:l.jamone@ucl.ac.uk" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">l.jamone@ucl.ac.uk</a></div>
+      <div class="card"><h3 class="font-semibold">Alexander Schmitz</h3><p class="text-sm text-neutral-300">CEO • XELA Robotics</p><a href="mailto:alexander@xelarobotics.com" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">alexander@xelarobotics.com</a></div>
+      <div class="card"><h3 class="font-semibold">Carlo Alessi</h3><p class="text-sm text-neutral-300">Postdoctoral Researcher • IIT</p><a href="mailto:carlo.alessi@iit.it" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">carlo.alessi@iit.it</a></div>
+      <div class="card"><h3 class="font-semibold">Gabriele Caddeo</h3><p class="text-sm text-neutral-300">Postdoctoral Researcher • IIT</p><a href="mailto:gabriele.caddeo@iit.it" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">gabriele.caddeo@iit.it</a></div>
+      <div class="card"><h3 class="font-semibold">Iris Andrussow</h3><p class="text-sm text-neutral-300">Ph.D. Student • Max Planck Institute for Intelligent Systems (MPI-IS)</p><a href="mailto:andrussow@is.mpg.de" class="mt-2 inline-block text-sm text-fuchsia-300 hover:text-fuchsia-200">andrussow@is.mpg.de</a></div>
       <div class="card"><h3 class="font-semibold">Yuxiang Ma</h3><p class="text-sm text-neutral-300">Ph.D. Student • MIT</p><a href="mailto:yxma20@mit.edu" class="mt-2 inline-block text-xs text-fuchsia-300 hover:text-fuchsia-200">yxma20@mit.edu</a></div>
     </div>
   </section>
@@ -464,12 +461,29 @@
       <h2 class="text-2xl md:text-3xl font-bold">Industry & Sponsors</h2>
       <!-- <a href="#contact" class="text-sm text-fuchsia-300 hover:text-fuchsia-200">Become a sponsor →</a> -->
     </div>
-    <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a class="card" href="https://www.prensilia.com/"><h3 class="font-semibold">Prensilia</h3></a>
-      <a class="card" href="https://shadowrobot.com/"><h3 class="font-semibold">Shadow Robot Company</h3></a>
-      <a class="card" href="https://www.xelarobotics.com/"><h3 class="font-semibold">XELA Robotics</h3></a>
-      <a class="card" href="https://www.dmrobot.com/en/"><h3 class="font-semibold">Daimon Robotics</h3></a>
-      <a class="card" href="https://www.sanctuary.ai/"><h3 class="font-semibold">Sanctuary AI</h3></a>
+    <div class="mt-6 space-y-8">
+      <!-- First row: Square-ish logos -->
+      <div class="flex justify-center items-center gap-8 flex-wrap">
+        <a class="card flex items-center justify-center p-10 w-64 h-40 hover:bg-neutral-700/40 transition-colors" href="https://www.prensilia.com/">
+          <img src="figures/logos/prensilia.png" alt="Prensilia" class="max-h-32 max-w-48 object-contain">
+        </a>
+        <a class="card flex items-center justify-center p-10 w-64 h-40 hover:bg-neutral-700/40 transition-colors" href="https://shadowrobot.com/">
+          <img src="figures/logos/shadow.png" alt="Shadow Robot Company" class="max-h-32 max-w-48 object-contain">
+        </a>
+        <a class="card flex items-center justify-center p-10 w-64 h-40 hover:bg-neutral-700/40 transition-colors" href="https://www.xelarobotics.com/">
+          <img src="figures/logos/xela.png" alt="XELA Robotics" class="max-h-32 max-w-48 object-contain">
+        </a>
+      </div>
+      
+      <!-- Second row: Wider logos -->
+      <div class="flex justify-center items-center gap-8 flex-wrap">
+        <a class="card flex items-center justify-center p-10 w-80 h-40 hover:bg-neutral-700/40 transition-colors" href="https://www.dmrobot.com/en/">
+          <img src="figures/logos/daimon.png" alt="Daimon Robotics" class="max-h-32 max-w-72 object-contain">
+        </a>
+        <a class="card flex items-center justify-center p-10 w-100 h-40 hover:bg-neutral-700/40 transition-colors" href="https://www.sanctuary.ai/">
+          <img src="figures/logos/sanctuary.png" alt="Sanctuary AI" class="max-h-32 max-w-72 object-contain">
+        </a>
+      </div>
     </div>
   </section>
 
@@ -499,12 +513,12 @@
       <p class="mt-2 text-neutral-300">Questions, sponsorship, or accessibility requests? Email the organizers at
         <a class="text-fuchsia-300 hover:text-fuchsia-200" href="mailto:icra.touch2action@gmail.com"> icra.touch2action@gmail.com</a>.
       </p>
-      <div class="mt-4 flex flex-wrap gap-3">
-        <a href="#" class="rounded-xl px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-sm">Subscribe for updates</a>
+      <!-- <div class="mt-4 flex flex-wrap gap-3">
+        <a href="#" class="rounded-xl px-4 py-2 bg-neutral-700 hover:bg-neutral-600 text-sm">Subscribe for updates</a>
         <a href="#submissions" class="rounded-xl px-4 py-2 bg-fuchsia-300 text-neutral-950 hover:bg-fuchsia-200 text-sm font-semibold">Submit your work</a>
-      </div>
+      </div> -->
     </div>
-    <p class="mt-6 text-xs text-neutral-500">© 2026 Workshop Organizers. Design inspired by RSS/ICRA workshop sites.</p>
+    <p class="mt-6 text-xs text-neutral-500">© ICRA 2026 Touch2Action Workshop Organizers. </p>
   </section>
 </body>
 </html>
